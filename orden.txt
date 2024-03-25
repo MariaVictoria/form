@@ -1,15 +1,18 @@
  form
-#- static
-#    - css
-#           - style.css
-#    -FAVICON
-#    - logo
-#         - conFondo
-#             - 3.png
-#         - sinFondo
-#             - 3-removebg-preview.png
-#- templates
-#    - saludo.html
-#-back
-#    - app.py
-#- index.html
+# back
+    - api.db
+    - app.py
+# static
+    - css
+        * style.css
+#   -favicon 
+        * favicon.ico
+    - logo
+        * conFondo
+            - 3.png
+        * sinFondo
+            - 3-removebg-preview.png
+# templates
+    - saludo.html
+
+# index.html
