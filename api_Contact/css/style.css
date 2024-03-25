@@ -1,0 +1,76 @@
+*{
+    background-color:rgb(0, 0, 0);
+}
+header {
+    width: 100%;
+    
+}
+.logo {
+    margin-left: 6%;
+    width: 15%;
+}
+
+header h1{
+    color:#DFB257;
+    margin-left: 3%;
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 600;
+    font-style: normal;
+
+}
+.header .header-social-links {
+    padding-right: 15px;
+  }
+  
+  .header .header-social-links a {
+    color: rgba(242, 239, 219, 0.5);
+    padding-left: 15px;
+    display: inline-block;
+    line-height: 0px;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  
+  .header .header-social-links a:hover {
+    color: #fff;
+  }
+form{
+    margin-left: 7%;
+    color: #DFB257;
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 600;
+    font-style: normal;
+   
+    
+}
+
+
+/* Estilos para los inputs y textarea */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    color:  #DFB257; /* Color de texto para los campos de entrada y textarea */
+    padding: 1%; /* Ajusta el espacio dentro de los inputs y textarea */
+}
+/* Estilo para el botón de enviar */
+form input[type="submit"] {
+    color: #DFB257; /* Color de texto para el botón de enviar */
+    background-color: #7d6745; /* Color de fondo para el botón de enviar (opcional) */
+    border: none; /* Elimina el borde del botón (opcional) */
+    padding: 10px 20px; /* Ajusta el relleno del botón según sea necesario */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Agrega esquinas redondeadas al botón (opcional) */
+    margin-left: 8%;
+}
+
+footer{
+    color:#DFB257;
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 3%;
+}
+.logomv {
+    width: 10%;
+}
+
