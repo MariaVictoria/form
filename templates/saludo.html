@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link href="./static/favicon/favicon.ico" rel="icon">
+
+    <title>Formulario de Prueba</title>
+
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header>
+        <div class="header-social-links">
+            <a href="https://github.com/MariaVictoria" class="github" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.instagram.com/maria_victoria_u/?hl=es" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/mar%C3%ADa-victoria-urcola-/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    </header>
+    <img class="logo" src="{{ url_for('static', filename='logo/conFondo/3.png') }}" alt="logo_MV">
+    <h1>Formulario de Prueba</h1>
+</header>
+<main id="main" data-aos="fade" data-aos-delay="1500">
+    <!-- ======= End Page Header ======= -->
+    <div class="page-header d-flex align-items-center">
+        <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 text-center">      
+                    <img src="{{ url_for('static', filename='logo/logo_MV/con_fondo/3.png') }}" alt="logo_mv" width="150">
+                    <h3>Contacto</h3>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Page Header -->
+    <main id="main" data-aos="fade" data-aos-delay="1500">
+        <h1>Gracias por Ponerte en contacto con nosotros!</h1>
+        <script>
+            setTimeout(function(){
+                window.location.replace('./index.html');
+            }, 3500);
+        </script>
+    </main><!-- End #main -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>María Victoria .All Rights Reserved</span></strong>
+                <img src="{{ url_for('static', filename='logo/sinFondo/3-removebg-preview.png') }}" class="logomv" alt=""> 
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

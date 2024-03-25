@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template
 import os
 import sqlite3
 
-app = Flask(__name__)
+pp = Flask(__name__, static_folder='form/static', template_folder='form/templates')
 
 # Obtener la ruta absoluta del directorio actual
 current_dir = os.path.dirname(__file__)
