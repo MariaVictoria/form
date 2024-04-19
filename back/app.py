@@ -1,8 +1,8 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, render_template, redirect, url_for
 import os
 import sqlite3
 
-pp = Flask(__name__, static_folder='form/static', template_folder='form/templates')
+app = Flask(__name__)
 
 # Obtener la ruta absoluta del directorio actual
 current_dir = os.path.dirname(__file__)
@@ -11,14 +11,10 @@ current_dir = os.path.dirname(__file__)
 DATABASE = os.path.join(current_dir, 'Api_MV.db')
 
 # Función para conectar a la base de datos
-
-
 def connect_db():
     return sqlite3.connect(DATABASE)
 
 # Crear la tabla si no existe
-
-
 def init_db():
     with connect_db() as db:
         cursor = db.cursor()
@@ -33,13 +29,10 @@ def init_db():
         ''')
         db.commit()
 
-
 # Inicializar la base de datos
 init_db()
 
 # Ruta para manejar la solicitud POST del formulario
-
-
 @app.route('/submit-form', methods=['POST'])
 def submit_form():
     # Recibir los datos del formulario
@@ -48,11 +41,10 @@ def submit_form():
     # Guardar los datos en la base de datos
     save_to_database(form_data)
 
-    # Responder al usuario con un mensaje de confirmación
-    return render_template('saludo.html', name=form_data['name'])
+    # Redirigir al usuario con un mensaje de agradecimiento
+    return redirect(url_for('Gracias por completar el formulario', name=form_data['name']))
+
 # Función para guardar los datos en la base de datos
-
-
 def save_to_database(data):
     with connect_db() as db:
         cursor = db.cursor()
@@ -62,6 +54,11 @@ def save_to_database(data):
         ''', (data['name'], data['email'], data['subject'], data['message']))
         db.commit()
 
+# Ruta para mostrar mensaje de agradecimiento
+@app.route('/gracias')
+def gracias():
+    name = request.args.get('name')
+    return render_template('..\\index.html', name=name)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -2,6 +2,8 @@
 # back
     - api.db
     - app.py
+    - templates
+        * saludo.html
 # static
     - css
         * style.css
@@ -12,7 +14,6 @@
             - 3.png
         * sinFondo
             - 3-removebg-preview.png
-# templates
-    - saludo.html
+
 
 # index.html

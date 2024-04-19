@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="icon" href="static/favicon/favicon.ico">
+    <link rel="icon" href="/static/favicon/favicon.ico">
 
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
 
     <title>Formulario de Prueba</title>
 </head>
+
 <body>
     <!-- ======= Header ======= -->
     <header>
         <div class="header-social-links">
-            <a href="https://github.com/MariaVictoria" class="github" target="_blank"><i
-                    class="bi bi-github"></i></a>
+            <a href="https://github.com/MariaVictoria" class="github" target="_blank"><i class="bi bi-github"></i></a>
             <a href="https://www.instagram.com/maria_victoria_u/?hl=es" target="_blank" class="instagram"><i
                     class="bi bi-instagram"></i></a>
             <a href="https://www.linkedin.com/in/mar%C3%ADa-victoria-urcola-/" target="_blank" class="linkedin"><i
                     class="bi bi-linkedin"></i></a>
         </div>
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-    </div>
 
         <img class="logo" src="static/logo/conFondo/3.png" alt="logo_MV">
-   
-    <h1>Formulario de Prueba</h1>
- </header>
-    <form action="https://github.com/MariaVictoria/submit-form" method="POST">
-        <label for="name">Nombre:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="subject">Asunto:</label><br>
-        <input type="text" id="subject" name="subject"><br>
-        <label for="message">Mensaje:</label><br>
-        <textarea id="message" name="message"></textarea><br><br>
-        <input type="submit" value="Enviar"> 
-    </form>
 
+        <h1>Formulario de Prueba</h1>
+
+    </header>
+
+    <body>
+
+        <form class="form" action="/submit-form" method="POST">
+            <div class="form_containte">
+                <h2 class="form_container">Contáctame</h2><br>
+                <label for="email">Nombre</label><br>
+                <input type="text" class="form_input" id="name" name="name"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" class="form_input" id="email" name="email"><br>
+
+                <label for="subject">Asunto:</label><br>
+                <input type="text" class="form_input" id="subject" name="subject"><br>
+
+                <label for="message">Mensaje:</label><br>
+                <textarea class="form_input" id="message" name="message"></textarea><br><br>
+
+                <div class="form-txt">
+                    <hr>
+                    <a href="#">Políticas de privacidad.</a><br><br>
+                    <a href="#">Términos y condiciones.</a><br>
+                    <hr>
+                </div>
+                <br><input type="submit" value="Enviar" class="btn">
+            </div>
+
+        </form>
+    </body>
     <footer id="footer" class="footer">
         <div class="container">
             <div class="copyright">
-                <img src="static/logo/sinFondo/3-removebg-preview.png" class="logomv" alt=""> &copy; Copyright <strong><span>María Victoria .All Rights Reserved</span></strong>
+                <img src="static/logo/sinFondo/3-removebg-preview.png" class="logomv" alt="logoMV"> &copy; Copyright
+                <strong><span>María Victoria .All Rights Reserved</span></strong>
             </div>
         </div>
     </footer>
-    
+
 </body>
+
 </html>

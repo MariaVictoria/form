@@ -3,19 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Prueba</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="./static/favicon/favicon.ico" rel="icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
-   
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
-    <link href="./static/favicon/favicon.ico" rel="icon">
-
-    <title>Formulario de Prueba</title>
-
-  </head>
-
-  <body>
+</head>
+<body>
     <!-- ======= Header ======= -->
     <header>
         <div class="header-social-links">
@@ -26,36 +21,39 @@
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
     </header>
-    <img class="logo" src="{{ url_for('static', filename='logo/conFondo/3.png') }}" alt="logo_MV">
-    <h1>Formulario de Prueba</h1>
-</header>
-<main id="main" data-aos="fade" data-aos-delay="1500">
-    <!-- ======= End Page Header ======= -->
-    <div class="page-header d-flex align-items-center">
-        <div class="container position-relative">
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-6 text-center">      
-                    <img src="{{ url_for('static', filename='logo/logo_MV/con_fondo/3.png') }}" alt="logo_mv" width="150">
-                    <h3>Contacto</h3>
+    <!-- ======= End Header ======= -->
+
+    <!-- ======= Main ======= -->
+    <main id="main" data-aos="fade" data-aos-delay="1500">
+        <div class="page-header d-flex align-items-center">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 text-center">      
+                        <img src="{{ url_for('static', filename='logo/conFondo/3.png') }}" alt="logo_MV" width="150">
+                        <h3>Contacto</h3>
+                    </div>
                 </div>
             </div>
+        </div><!-- End Page Header -->
+
+        <div class="container">
+            <h1>Gracias por ponerte en contacto con nosotros!</h1>
+            <script>
+                setTimeout(function(){
+                    window.location.replace('./index.html');
+                }, 3500);
+            </script>
         </div>
-    </div><!-- End Page Header -->
-    <main id="main" data-aos="fade" data-aos-delay="1500">
-        <h1>Gracias por Ponerte en contacto con nosotros!</h1>
-        <script>
-            setTimeout(function(){
-                window.location.replace('./index.html');
-            }, 3500);
-        </script>
-    </main><!-- End #main -->
+    </main><!-- End Main -->
+
+    <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>María Victoria .All Rights Reserved</span></strong>
+                &copy; Copyright <strong><span>María Victoria. Todos los derechos reservados</span></strong>
                 <img src="{{ url_for('static', filename='logo/sinFondo/3-removebg-preview.png') }}" class="logomv" alt=""> 
             </div>
         </div>
-    </footer>
+    </footer><!-- End Footer -->
 </body>
 </html>

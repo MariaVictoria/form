@@ -63,9 +63,21 @@ form input[type="submit"] {
     margin-left: 8%;
 }
 
+div.form-txt a{
+   color:#DFB257;
+}
+div.form-txt hr {
+    border-color: #DFB257; 
+    width: 50%; 
+    margin: 10px 0; 
+    border-style: solid; 
+    border-width: 0 0 2px 0;
+}
+
+
 footer{
     color:#DFB257;
-    font-family: "Rubik Scribble", system-ui;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
     font-style: normal;
     margin-left: 5%;
@@ -73,4 +85,6 @@ footer{
 .logomv {
     width: 7%;
    }
+
+
 
